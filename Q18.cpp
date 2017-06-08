@@ -44,7 +44,7 @@ void deleteListNode(ListNode** pHead, ListNode* tobedelete){
 
             node = node->m_pNext;
         }
-        // 已到达尾节点
+        // 已到达尾节点前一节点
         node->m_pNext = nullptr;
         delete tobedelete;
         tobedelete = nullptr;
